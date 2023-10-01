@@ -3,14 +3,14 @@ import { withReact } from '@nx/react';
 import { withModuleFederation } from '@nx/react/module-federation';
 import { Configuration } from 'webpack';
 
-import baseConfig from './module-federation.config';
+import * as baseConfig from './module-federation.config';
 
 const config = {
   ...baseConfig,
 };
 
 // Nx plugins for webpack to build config object from Nx options and context.
-export default composePlugins(
+module.exports = composePlugins(
   withNx(),
   withReact(),
   withModuleFederation(config),

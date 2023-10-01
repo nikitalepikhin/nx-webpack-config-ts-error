@@ -22,7 +22,7 @@
         "styles": ["apps/javascript-host/src/styles.scss"],
         "scripts": [],
         "isolatedConfig": true,
-        "webpackConfig": "apps/javascript-host/webpack.config.js"
+        "webpackConfig": "apps/javascript-host/webpack.config.ts"
       },
       "configurations": {
         "development": {
