@@ -3,7 +3,7 @@ import { withReact } from '@nx/react';
 import { withModuleFederation } from '@nx/react/module-federation';
 import { Configuration } from 'webpack';
 
-import baseConfig from './module-federation.config';
+import * as baseConfig from './module-federation.config';
 
 const config = {
   ...baseConfig,
